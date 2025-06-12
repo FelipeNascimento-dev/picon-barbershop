@@ -44,10 +44,9 @@ section {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .logo-img {
-    width: 100px;
-    height: 100px;
+    width: 250px;
   }
 
   .slogan h1 {

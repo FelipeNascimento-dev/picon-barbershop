@@ -1,0 +1,75 @@
+.white-divider {
+  background-color: #E0E0E0;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-49.6vw + 50%);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.white-divider h2 {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: bold;
+  margin: 0;
+}
+
+.white-divider h3 {
+  font-size: 1.7rem;
+  color: #333;
+  margin: 0;
+}
+
+.divider-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+  border: none;
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+
+.btn-white:hover {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .white-divider h2 {
+    font-size: 1.5rem;
+  }
+
+  .white-divider h3 {
+    font-size: 1rem;
+  }
+
+.divider-buttons {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
