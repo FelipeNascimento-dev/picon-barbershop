@@ -1,6 +1,8 @@
 header {
   text-align: center;
   padding-top: 150px;
+  background-color: transparent;
+  z-index: -5;
 }
 
 .logo-img {
