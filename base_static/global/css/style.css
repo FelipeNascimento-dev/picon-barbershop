@@ -3,6 +3,7 @@
 @import url(menu.css);
 @import url(local.css);
 @import url(time.css);
+@import url(about.css);
 
 *{
   margin: 0;
