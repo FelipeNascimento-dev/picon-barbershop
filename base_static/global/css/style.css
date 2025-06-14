@@ -1,6 +1,7 @@
 @import url(header.css);
 @import url(container_fotos.css);
 @import url(menu.css);
+@import url(local.css);
 
 *{
   margin: 0;

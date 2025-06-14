@@ -1,0 +1,63 @@
+{% load static %}
+
+<section class="onde-estamos">
+    <div class="onde-estamos-conteudo">
+        <h2>📍 ONDE ESTAMOS LOCALIZADOS</h2>
+        <p class="onde-subtitulo">Venha nos visitar! Nossa equipe está pronta para te atender com excelência.</p>
+
+        <div class="onde-layout">
+            <div class="onde-info">
+                <h3>Endereço</h3>
+                <p>
+                    R. Tuiuti, 2854<br>
+                    Vila Gomes Cardim<br>
+                    São Paulo - SP<br>
+                    CEP: 03307-000
+                </p>
+                <br>
+                <br>
+                <div class="descricao">
+                    <p>
+                        A Barbearia Stillux por Eduarda Barber está localizada na R. Tuiuti, 2854 – Vila Gomes Cardim, uma
+                        das regiões mais acessíveis e conhecidas da zona leste de São Paulo.
+                        <br>
+                        <br>
+                        Região é tranquila, bem iluminada e com diversas opções de
+                        comércio e estacionamento nas proximidades.
+                    </p>
+                </div>
+            </div>
+
+            <div class="onde-mapa-container">
+                <div class="onde-mapa" id="map"></div>
+
+                <div class="botao-maps">
+                    <a href="https://www.google.com/maps/search/?api=1&query=R.+Tuiuti,+2854+-+Vila+Gomes+Cardim"
+                        target="_blank" rel="noopener noreferrer">
+                        📍 Ver no Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const lat = -23.55066807660093;
+            const lng = -46.573237125147934;
+
+            const map = L.map('map').setView([lat, lng], 17);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+
+            L.marker([lat, lng]).addTo(map)
+                .bindPopup("<b>R. Tuiuti, 2854</b><br>Vila Gomes Cardim")
+                .openPopup();
+        });
+    </script>
+
+</section>
