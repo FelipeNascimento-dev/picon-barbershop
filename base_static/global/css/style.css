@@ -2,6 +2,7 @@
 @import url(container_fotos.css);
 @import url(menu.css);
 @import url(local.css);
+@import url(time.css);
 
 *{
   margin: 0;

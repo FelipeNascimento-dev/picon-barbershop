@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     {% include 'global/partials/_head.html' %}
 </head>
+
 <body>
     <div class="background-stars">
         <div id="stars"></div>
@@ -12,9 +14,19 @@
     {% include 'global/partials/_header.html' %}
     {% include 'global/partials/_menu.html' %}
     {% include 'global/partials/_local.html' %}
+    {% include 'global/partials/_time.html' %}
 
     {% block content %}
-    
+
     {% endblock %}
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    </script>
 </body>
+
 </html>
