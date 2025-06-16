@@ -1,0 +1,99 @@
+.footer-container {
+    background-color: #E0E0E0;
+    padding: 2rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.footer-container h3 {
+    margin: 0.2rem 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.footer-container h5 {
+    margin: 0.2rem 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.footer-links {
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #000;
+}
+
+.footer-bottom-bar {
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: #E0E0E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-dev {
+    font-size: 0.85rem;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer-dev a {
+    color: #1e3c72;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-dev a:hover {
+    color: #000;
+}
+
+.linkedin-icon {
+    width: 16px;
+    height: 16px;
+}
+
+@media (max-width: 768px) {
+    .footer-container h2 {
+        font-size: 1.2rem;
+    }
+
+    .footer-container p,
+    .footer-links a {
+        font-size: 0.95rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .footer-bottom-bar {
+        justify-content: center;
+        text-align: center;
+    }
+}

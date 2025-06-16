@@ -49,8 +49,8 @@
 }
 
 .btn-white:hover {
-    background-color: #000;
-    color: white;
+  background-color: #000;
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -62,7 +62,7 @@
     font-size: 1rem;
   }
 
-.divider-buttons {
+  .divider-buttons {
     flex-direction: column;
     gap: 10px;
     width: 100%;

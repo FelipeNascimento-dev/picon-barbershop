@@ -4,6 +4,7 @@
 @import url(local.css);
 @import url(time.css);
 @import url(about.css);
+@import url(footer.css);
 
 *{
   margin: 0;
