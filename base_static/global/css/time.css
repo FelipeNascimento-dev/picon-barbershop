@@ -5,7 +5,7 @@
 }
 
 .time-divider {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -24,9 +24,12 @@
 
 .time-buttons {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.2rem;
     width: 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
 }
 
 .barbeiro-card {
@@ -39,6 +42,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
 }
 
 .barbeiro-card:hover {
@@ -47,7 +51,7 @@
 
 .barbeiro-card img {
     width: 100%;
-    height: 220px;
+    height: 300px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 0.8rem;
@@ -76,14 +80,19 @@
     color: white;
 }
 
-
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .time-buttons {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    .time-buttons {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
     .time-buttons {
         grid-template-columns: 1fr;
     }
