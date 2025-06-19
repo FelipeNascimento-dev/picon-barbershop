@@ -1,0 +1,73 @@
+.estilo-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.foto-box {
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.foto-box::after, .foto-box::before{
+    --angle: 0deg;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), transparent 75%, #fff);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 20px;
+    animation: 3s spin linear infinite;
+}
+
+.foto-box::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+.foto-box img {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 600px;
+  border-radius: 18px;
+  display: block;
+  object-fit: cover;
+}
+
+.foto-box:hover {
+  transform: scale(1.02);
+}
+
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+
+    to{
+        --angle: 360deg;
+    }
+}
+
+@media (max-width: 500px) {
+  .estilo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

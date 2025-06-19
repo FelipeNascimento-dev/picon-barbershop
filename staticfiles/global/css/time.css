@@ -1,0 +1,105 @@
+.time-barbeiros {
+    background-color: #e6e6e6;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.time-divider {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.time-divider h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.time-divider h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 2.5rem;
+}
+
+.time-buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.2rem;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.barbeiro-card {
+    background-color: #E0E0E0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.barbeiro-card:hover {
+    transform: translateY(-5px);
+}
+
+.barbeiro-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+}
+
+.barbeiro-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.funcao-barbearia {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.btn-barbeiro {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border: 2px solid #000;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.btn-barbeiro:hover {
+    background-color: #000;
+    color: white;
+}
+
+@media (max-width: 1200px) {
+    .time-buttons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .time-buttons {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .time-buttons {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,109 @@
+.onde-estamos {
+    background-color: #e6e6e6;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.onde-estamos-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.onde-estamos h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.onde-subtitulo {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 2.5rem;
+}
+
+.onde-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.onde-info {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.onde-info h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.onde-info p {
+    letter-spacing: 2px;
+}
+
+.onde-mapa {
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+iframe{
+    width: 300px;
+    height: 300px;
+}
+
+.onde-mapa-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.botao-maps a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: white;
+    border: 2px solid #000;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.botao-maps a:hover {
+    background-color: #000;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .descricao {
+        display: none;
+    }
+
+    .onde-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .onde-info {
+        max-width: 100%;
+        font-size: 1rem;
+    }
+
+    .onde-mapa {
+        max-width: 300px;
+        height: 300px;
+    }
+
+    .botao-maps {
+        margin-top: 1rem;
+    }
+}
